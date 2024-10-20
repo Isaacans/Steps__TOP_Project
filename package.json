@@ -1,7 +1,7 @@
 {
-  "name": "template_webpack_project",
+  "name": "Steps__TOP_Project",
   "version": "1.0.0",
-  "description": "A template to be used as a starting base for webpack projects.",
+  "description": "Steps: Accomplish anything with Steps, a to-do list and tracker app.",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
