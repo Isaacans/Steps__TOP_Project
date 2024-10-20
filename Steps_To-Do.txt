@@ -1,7 +1,0 @@
- - Brainstorm requirements list
- - Design app
- - App works in console
- - Design UI
- - Add UI
- - Beautify UI
- - Refractor 
