@@ -1,5 +1,5 @@
 
-# Steps: A Project From, TOP
+# Steps: A Project From TOP
 
 Accomplish anything with Steps, a **to-do list and tracker app**.
 
