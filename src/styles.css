@@ -1,104 +1,79 @@
-root, *, body {
-    box-sizing: border-box;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* End of CSS reset (A (more) Modern CSS Reset) */
 
 body {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 102vh;
-    margin: 0;
-    background: bottom 14% right 50% / cover no-repeat url("./images/main-bg.webp");
-    background-attachment: fixed;
-    background-color: rgb(12, 4, 0);
-}
-
-nav button {
-    margin: 2.2em 1.5vw 0.5em;
-    padding: 0.1em 0.4em; 
-    font-size: 1.6em;
-    color: rgb(245 245 245);
-    background-color: rgb(65 61 63);
-}
-
-#content {
-    /* background-color: antiquewhite; */
-    color: white;
-    margin-top: 2em;
-    flex-grow: 1;
-}
-
-.home {
-    font-size: 1.5em;
-    width: 40%;
-    margin: 1em auto;
-    min-width: 350px;
-    padding: 1em;
-    background-color: rgba(22, 14, 14, 0.616);
-}
-
-footer {
-    order: 3;
-    opacity: 0.7;
-    line-height: 2em; /* Used to increase container height while centering text */
-    background-color: rgb(35, 35, 35, 0.8);
-    margin-top: auto;
-    font-size: 0.82em;
-    color: rgb(255, 255, 255);
-}
-footer a {
-    color: rgb(108 145 255);
-}
-
-.menu {
-    font-size: 1.5em;
-    background-color: rgba(0, 0, 0, 0.295);
-    width: 40%;
-    margin: 1em auto;
-    min-width: 350px;
-    padding: 2em 1em;
-}
-.menu-card {
-    font-size: 1.6em;
-    margin: 1.5em auto;
-    padding: 1em;
-    width: 8em;
-    background-color: rgba(53, 53, 37, 0.637);
-}
-.menu-card :nth-child(2) {
-    font-size: 0.5em;
-}
-.menu-card :nth-child(3) {
-    font-size: 0.8em;
-}
-
-.about {
-    font-size: 1.5em;
-    background-color: rgba(0, 0, 0, 0.74);
-    width: 40%;
-    margin: 1em auto;
-    min-width: 350px;
-    padding: 2em 1em;
-}
-.about div {
-    margin: 1em 0em;
-}
-
-img {
-    width: 100%;
-}
-
-button {
-    position: relative;
-}
-button.active ::after {
-    content: "";
-    width: 100%;
-    height: 35px;
-    background-image: url("./images/bowl.png");
-    background-size: 45px 30px;
-    background-repeat: no-repeat;
-    position: absolute;
-    bottom: 38px;
-    left: 26%;
+    background-color: rgb(214, 241, 236);
 }
